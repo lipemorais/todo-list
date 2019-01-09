@@ -20,7 +20,7 @@ module.exports = {
     new HtmlWebpackPlugin({ title: "OutputManagement" }),
     new webpack.HotModuleReplacementPlugin()
   ],
-  devtool: "inline-source-map",
+  devtool: "eval-source-map",
   module: {
     rules: [
       {
