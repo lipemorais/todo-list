@@ -1,12 +1,6 @@
 import "./style.css";
+import React from "react";
+import ReactDOM from "react-dom";
 
-const component = () => {
-  const element = document.createElement("div");
-
-  element.innerHTML = "Hello Ronaldo";
-  element.classList.add("hello");
-
-  return element;
-};
-
-document.body.appendChild(component());
+const reactComponent = () => <div className="hello">Hello React</div>;
+ReactDOM.render(reactComponent(), document.body);
