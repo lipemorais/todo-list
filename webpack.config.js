@@ -17,7 +17,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(["dist"]),
-    new HtmlWebpackPlugin({ title: "OutputManagement" }),
+    new HtmlWebpackPlugin({
+      title: "OutputManagement",
+      template: "./src/index.html"
+    }),
     new webpack.HotModuleReplacementPlugin()
   ],
   devtool: "eval-source-map",
