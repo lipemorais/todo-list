@@ -1,6 +1,5 @@
-import "./style.css";
-import React from "react";
 import ReactDOM from "react-dom";
+import React from "react";
+import { Hello } from "./hello";
 
-const reactComponent = () => <div className="hello">Hello React</div>;
-ReactDOM.render(reactComponent(), document.getElementById("root"));
+ReactDOM.render(<Hello />, document.getElementById("root"));
