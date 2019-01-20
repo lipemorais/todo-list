@@ -38,5 +38,10 @@
     "eslint-config-prettier": "^3.3.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
   }
 }
